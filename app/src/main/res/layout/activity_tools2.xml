@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.hci_alpha.tools">
+    android:orientation="vertical"
+    android:weightSum="3" >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color1">
+
+        <ImageButton
+            android:id="@+id/sickleImgbt"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/sickle" />
+
+        <ImageButton
+            android:id="@+id/irriImgbt"
+            android:layout_width="208dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/irrigation" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color2">
+
+        <ImageButton
+            android:id="@+id/tillerImgbt"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/tiller" />
+
+        <ImageButton
+            android:id="@+id/sprayerImgbt"
+            android:layout_width="217dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/sparayer" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color3">
+
+        <ImageButton
+            android:id="@+id/cutterImgbt"
+            android:paddingLeft="8dp"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cutter" />
+
+        <ImageButton
+            android:id="@+id/chainsawImgbt"
+            android:layout_width="212dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/chainsaw" />
+    </LinearLayout>
+
+</LinearLayout>

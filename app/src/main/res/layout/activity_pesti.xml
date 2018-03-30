@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.hci_alpha.pesti">
+    android:orientation="vertical"
+    android:weightSum="3" >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color1">
+
+        <ImageButton
+            android:id="@+id/wheatpImgbt"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pegasus" />
+
+        <ImageButton
+            android:id="@+id/barleypImgbt"
+            android:layout_width="213dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/tatti2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color2">
+
+        <ImageButton
+            android:id="@+id/ricepImgbt"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pot" />
+
+        <ImageButton
+            android:id="@+id/maizepImgbt"
+            android:layout_width="218dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/neem" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color3">
+
+        <ImageButton
+            android:id="@+id/potatopImgbt"
+            android:paddingLeft="8dp"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/aakrosh" />
+
+        <ImageButton
+            android:id="@+id/sugarpImgbt"
+            android:layout_width="217dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/cyperwp" />
+    </LinearLayout>
+
+</LinearLayout>

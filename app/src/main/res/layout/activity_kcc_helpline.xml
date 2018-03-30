@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.hci_alpha.kccHelpline">
+    android:orientation="vertical"
+    android:weightSum="4" >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/color1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/kisan"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/color2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:text="The purpose of Kisan call centers is to respond to issues raised by you(Farmers), instantly, in your local language. There are call centers for every state which are expected to handle traffic from any part of the country. Queries related to agriculture and other related sectors are addressed through these call centers. "
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/color3">
+
+        <Button
+            android:id="@+id/callKcc"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Call"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TabWidget"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/color4">
+
+        <Button
+            android:id="@+id/goBack"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:text="Go Back"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.TabWidget"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>

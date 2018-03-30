@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.hci_alpha.BuyActivity">
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@color/color3">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color1">
+
+        <ImageButton
+            android:id="@+id/cropImgbt"
+            android:layout_width="198dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/crops" />
+
+        <ImageButton
+            android:id="@+id/pestiImgbt"
+            android:layout_width="209dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/tetsicsides" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color2">
+
+
+        <ImageButton
+            android:id="@+id/toolsImgbt"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/toolschoda" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

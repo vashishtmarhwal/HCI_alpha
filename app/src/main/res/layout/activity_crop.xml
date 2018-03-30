@@ -1,9 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.hci_alpha.crop">
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@color/color1">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/wheatImgbt"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/wheat" />
+
+        <ImageButton
+            android:id="@+id/riceImgbt"
+            android:layout_width="216dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/rice" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color2">
+
+        <ImageButton
+            android:id="@+id/barleyImgbt"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/barley" />
+
+        <ImageButton
+            android:id="@+id/potatoImgbt"
+            android:layout_width="223dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/potato" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@color/color3">
+
+        <ImageButton
+            android:id="@+id/maizeImgbt"
+            android:paddingLeft="8dp"
+            android:layout_width="189dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/maize" />
+
+        <ImageButton
+            android:id="@+id/sugarcaneImgbt"
+            android:layout_width="225dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:src="@drawable/sugarcane" />
+    </LinearLayout>
+
+</LinearLayout>
